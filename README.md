@@ -9,6 +9,9 @@ go mod init github.com/killlowkey/golang-testing
 go get go.uber.org/mock/gomock
 go get github.com/stretchr/testify
 go get github.com/gin-gonic/gin
+go get gorm.io/gorm
+go get gorm.io/driver/mysql
+go get github.com/DATA-DOG/go-sqlmock
 ```
 
 ## 创建 mock
@@ -28,3 +31,4 @@ mockgen -source ./biz/user.go -destination ./biz/user_mock.go -package biz UserS
 1. https://github.com/uber-go/mock
 2. https://github.com/stretchr/testify
 3. https://gin-gonic.com/docs/testing/
+4. https://github.com/Watson-Sei/go-sqlmock-gorm/blob/main/main_test.go
