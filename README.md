@@ -13,6 +13,10 @@ go get gorm.io/gorm
 go get gorm.io/driver/mysql
 go get github.com/DATA-DOG/go-sqlmock
 ```
+1. sqlmock：模拟数据库
+2. mock：mock 接口
+3. testify：断言框架
+4. mockery
 
 ## 创建 mock
 ```shell
@@ -32,3 +36,4 @@ mockgen -source ./biz/user.go -destination ./biz/user_mock.go -package biz UserS
 2. https://github.com/stretchr/testify
 3. https://gin-gonic.com/docs/testing/
 4. https://github.com/Watson-Sei/go-sqlmock-gorm/blob/main/main_test.go
+5. https://vektra.github.io/mockery/latest/#why-mockery
